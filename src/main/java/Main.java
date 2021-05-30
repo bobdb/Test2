@@ -1,5 +1,3 @@
-package net.bobdb.TestMain;
-
 import org.apache.commons.cli.*;
 
 import java.sql.Timestamp;
