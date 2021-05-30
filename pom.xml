@@ -12,6 +12,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.2-beta-5</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -22,13 +23,15 @@
                             <archive>
                                 <manifest>
                                     <mainClass>
-                                        net.bobdb.TestMain
+                                        TestMain
                                     </mainClass>
                                 </manifest>
                             </archive>
                             <descriptorRefs>
                                 <descriptorRef>jar-with-dependencies</descriptorRef>
                             </descriptorRefs>
+                            <appendAssemblyId>false</appendAssemblyId>
+                            <finalName>TestMain</finalName>
                         </configuration>
                     </execution>
                 </executions>
